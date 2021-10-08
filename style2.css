@@ -1,0 +1,84 @@
+*{
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+        background: linear-gradient(120deg, rgb(241, 241, 125), rgb(245, 237, 171),white);
+}
+h1{
+    font-family: 'Lobster', cursive;
+}
+.intestazione{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    
+}
+.titolo{
+    width: 30%;  
+}
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+}
+.menu li{
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.menu li:hover{
+    font-weight: bold;
+    color: green;
+}
+.principale{
+    background-color: rgba(253, 253, 231,1);
+    display: flex;
+    flex-grow: row nowrap;
+    align-items: center;
+    justify-content: center;   
+}
+.articolo{
+    text-align: justify;
+    height: 100px;
+    padding :0 15px 0 15px;
+}
+.piatto{
+    text-align: center;
+    height: 550px;
+    border: 0.5px solid; 
+    width: 100%;
+}
+.foto{
+    box-shadow: 5px 7px 10px 5px yellow;
+    
+}
+.foto:hover{
+    animation-name: scala;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scala{
+    0%{ transform: scale(0.8)}
+    100%{ transform: scale(1)}
+}
+.esterno{
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: -10px; 
+}
+
+.esterno:hover{
+    color: green;
+}
+.scritta{
+    margin-top: 0;
+    text-align: center;
+}
+@media screen and (max-width:1000px){
+    .principale{ display: block;}
+}
+
