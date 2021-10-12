@@ -1,0 +1,39 @@
+.font-big{
+  font-size: 30px;
+}
+.little-font{
+  font-size:15px;
+}
+.text-m{
+  font-size:20px;
+  text-align: justify;
+}
+.title{
+  color: red;
+}
+.pino{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.punto{
+  height: 16px;
+  width: 16px;
+  background-color: gold;
+  border-radius: 50%;
+  padding: 0px 0px;
+  margin: 0px 5px;
+}
+
+.misure{
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width:1000px ) and (min-width:765px){
+  .font-big{font-size: 20px;}
+}
+@media screen and (max-width:1000px ) and (min-width:765px){
+  .little-font{font-size: 9px;}
+}
